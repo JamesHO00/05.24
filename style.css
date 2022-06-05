@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.todo-list {
+  width: 400px;
+}
+.todo-list__form {
+  display: flex;
+}
+.todo-list__form input {
+  padding: 15px;
+  font-size: 1rem;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.todo-list__form button {
+  background-color: #f8b759;
+  color: #d24e5f;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.todo-list__tabs {
+  display: flex;
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.todo-list__tabs > li {
+  padding: 10px 20px;
+  background-color: #eeffff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.todo-list__tabs > li.active {
+  background-color: #f8b759;
+  color: #d24e5f;
+}
+.todo-list__items {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  width: 400px;
+}
+.todo-list__items li {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #eeffff;
+}
+
+.todo-list__not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8b759;
+  color: #d24e5f;
+  height: 200px;
+}
